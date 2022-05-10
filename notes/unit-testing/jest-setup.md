@@ -4,10 +4,17 @@ Experimenting and exploring unit testing with [Jest](https://jestjs.io/).
 
 ## How to add jest to a project
 
+If you do not have a `package.json` create one with the following command in the terminal.
+
+```bash
+npm init -y
+```
+
+Create `.gitignore` file with `node_modules` inside of it.
+
 Add jest & babel to your Project.
 
 ```bash
-npm install --save-dev jest
 npm install --save-dev jest babel-jest @babel/core @babel/preset-env
 ```
 
@@ -20,7 +27,7 @@ module.exports = {
 };
 ```
 
-In the package.json add a script to the package. 
+In the package.json add a new script to the object. 
 
 ```
 "scripts": {

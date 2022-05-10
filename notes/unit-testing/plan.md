@@ -25,6 +25,8 @@ _See package.json for the test script_
 
 ## Common matchers
 
+A Matcher follow's the `expect()` function. The jest docs has a list of different matchers. We will look at two common ones.
+
 ### toBe()
 
 To test for equality with **primitive** values you can use `expect().toBe()`.
@@ -56,7 +58,7 @@ it("should capitalize a uppercase string", () => {
 
 ### toEqual()
 
-To test for equality with an **Object** or **Array** values you can use `expect().toEqual()`. This goes through indexes / keys to check they are equal.
+To test for equality with an **Object** or an **Array** values you can use `expect().toEqual()`. This goes through indexes / keys to check they are equal.
 
 ```js
 it("should filter by junk foodType", () => {
@@ -98,4 +100,40 @@ it("should filter by junk foodType", () => {
   // ASSERT
   expect(result).toEqual(testResult);
 });
+```
+
+## Positive & Negative tests
+
+**Positive test case** is when everything goes as expected.
+
+e.g. The function is given the correct parameters / inputs.
+
+**Negative test case** is the when it does go to plan.
+
+e.g. The function is given the wrong parameters / inputs.
+
+The tests we have written so far only deal with positive outcomes.
+
+```js
+it("should handle incorrect inputs", () => {
+  // ARRANGE + ACT + ASSERT
+  expect(capitalizeString()).toBe("");
+  expect(capitalizeString(2)).toBe("");
+  expect(capitalizeString(true)).toBe("");
+  expect(capitalizeString([])).toBe("");
+  expect(capitalizeString({})).toBe("");
+  expect(capitalizeString(null)).toBe("");
+});
+```
+
+```js
+export const capitalizeString = word => {
+  if (typeof word !== "string") {
+    return "";
+  }
+
+  const capitalizedWord = word[0].toUpperCase() + word.slice(1).toLowerCase();
+
+  return capitalizedWord;
+};
 ```
