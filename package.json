@@ -1,0 +1,26 @@
+{
+  "name": "db-march-unit-testing",
+  "version": "1.0.0",
+  "description": "A small repo looking at testing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nology-tech/db-march-unit-testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nology-tech/db-march-unit-testing/issues"
+  },
+  "homepage": "https://github.com/nology-tech/db-march-unit-testing#readme",
+  "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "babel-jest": "^28.1.0",
+    "jest": "^28.1.0"
+  }
+}

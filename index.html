@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Shop</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Food Shop</h1>
+    </header>
+    <main>
+      <!-- FORM -->
+      <section>
+        <form id="food-form">
+          <label for="sort-food">Sort By</label>
+          <select name="sort-food" id="sort-food">
+            <option value="all">All</option>
+            <option value="junk">Junk Food</option>
+            <option value="healthy">Healthy Food</option>
+          </select>
+          <input type="submit" />
+        </form>
+      </section>
+      <!-- FOOD GRID -->
+      <section id="food-container"></section>
+    </main>
+    <!-- SCRIPT TYPE = MODULE -> USING IMPORT AND EXPORT IN OUR JS-->
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>
