@@ -2,6 +2,8 @@
 
 run `npm run test:cypress` to get cypress to start up.
 
+_See package.json for the test script_
+
 ## Basic syntax
 
 Similar to Jest you are able to use the `it()` function it takes to parameters.
@@ -59,7 +61,7 @@ it("should only show healthy food cards", () => {
 });
 ```
 
-Go onto the Challenge.
+Go onto the Challenge, the solution is below.
 
 ```js
 it("should show all food cards after showing healthy cards", () => {

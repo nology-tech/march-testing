@@ -20,4 +20,10 @@ cd db-march-unit-testing
 npm install
 ```
 
+## Scripts
+
+For jest use `npm run test:jest`.
+
+For cypress use `npm run test:cypress`.
+
 ---

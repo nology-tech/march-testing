@@ -2,6 +2,8 @@
 
 run `npm run test:jest` to get jest to start watching the js folder.
 
+_See package.json for the test script_
+
 ## Basic test syntax
 
 Jest gives you the `it()` function it takes to parameters.
@@ -16,14 +18,6 @@ it("should....", () => {
   expect(5 + 5).toBe(10);
 });
 ```
-
-To run Jest in watch mode run.
-
-```bash
-npm test
-```
-
-_See package.json for the test script_
 
 ## Common matchers
 

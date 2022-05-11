@@ -31,10 +31,13 @@ In the package.json add a new script to the object.
 
 ```
 "scripts": {
-    "test": "jest js --watch",
+    "test:jest": "jest js --watch",
   }
 ```
 - test is going to watch the js folder, when you save it will run any `.test.js` files.
+
+*the script name can be whatever you like it to be, it doesn't have to be test:jest*
+
 
 ## Links
 

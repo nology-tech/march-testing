@@ -1,6 +1,6 @@
 # Cypress Setup
 
-Experimenting and exploring end to end testing with [Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress).
+End to end testing with [Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress).
 
 ## How to add cypress to a project
 
@@ -22,11 +22,13 @@ In the package.json add a new script to the object.
 
 ```
 "scripts": {
-   "cypress": "cypress open",
+   "test:cypress": "cypress open",
   }
 ```
 
 - cypress is going to open a browser with a dashboard where you can choose to run any `.spec.js` files.
+
+*the script name can be whatever you like it to be, it doesn't have to be test:cypress*
 
 ## Links
 
