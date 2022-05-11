@@ -4,8 +4,8 @@
   "description": "A small repo looking at testing.",
   "main": "index.js",
   "scripts": {
-    "test": "jest js --watch",
-    "cypress": "cypress open"
+    "test:jest": "jest js --watch",
+    "test:cypress": "cypress open"
   },
   "repository": {
     "type": "git",

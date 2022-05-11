@@ -1,5 +1,5 @@
 // DEFAULT IMPORT -> ONE THING
-import data from "./data.js";
+import foodStock from "./foodStock.js";
 
 // NAMED IMPORT -> MULTIPLES
 import { generateFoodHTML, filterFoodByType } from "./functions.js";
@@ -8,7 +8,7 @@ const form = document.getElementById("food-form");
 const sortBy = document.getElementById("sort-food");
 const foodContainer = document.getElementById("food-container");
 
-foodContainer.innerHTML = generateFoodHTML(data);
+foodContainer.innerHTML = generateFoodHTML(foodStock);
 
 form.addEventListener("submit", event => {
   // STOPS FORM REFRESH
@@ -17,12 +17,12 @@ form.addEventListener("submit", event => {
   // GETS THE VALUE OF SELECT EITHER ALL OR JUNK OR HEALTHY
   const value = sortBy.value;
 
-  let foodStockToDisplay = data;
+  let foodStockToDisplay = foodStock;
 
   // IF NOT ALL IT IS EITHER JUNK OR HEALTHY
   if (value !== "all") {
     // SET THE
-    foodStockToDisplay = filterFoodByType(value, data);
+    foodStockToDisplay = filterFoodByType(value, foodStock);
   }
 
   foodContainer.innerHTML = generateFoodHTML(foodStockToDisplay);

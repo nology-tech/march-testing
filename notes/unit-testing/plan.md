@@ -1,5 +1,7 @@
 # Jest
 
+run `npm run test:jest` to get jest to start watching the js folder.
+
 ## Basic test syntax
 
 Jest gives you the `it()` function it takes to parameters.
